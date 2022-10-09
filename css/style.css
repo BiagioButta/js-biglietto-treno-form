@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.debug{
+    border: 1px solid rgb(255, 255, 255);
+    min-height: 100px;
+}
+
+:root{
+    --my-red: red;
+}
+
+.container-fluid{
+    height: 100vh;
+    background-image: url(../img/john-michael-wilyat-rq8Db1FhuX0-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.fa-train{
+    font-size: 500%;
+}
+
+.first-row{
+    width: 40%;
+}
+
+
+.color-red{
+    color: var(--my-red);
+}
+
+.bg-red{
+    background-color: var(--my-red);
+}
+
+h1{
+    font-size: 4rem;
+}
+
+.fa-arrow-right-arrow-left{
+    font-size: 100%;
+}
+
+.form-check-input:checked{
+    background-color: var(--my-red);
+    border-color: var(--my-red);
+}

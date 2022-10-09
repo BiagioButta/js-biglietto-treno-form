@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- monstserrat -->
+    <!-- roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- roboto -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <div class="container-fluid img-fluid">
+
+        <div class="row row-cols-1 first-row debug m-auto">
+
+            <div class="col d-flex justify-content-center align-items-center mt-5">
+                <i class="fa-solid fa-train text-white"></i>
+                <h1 class="color-red text-uppercase fw-bold fst-italic ">Train Tickets</h1>
+            </div>
+
+            <div class="col mt-5">
+                <div class="row justify-content-between">
+                    <div class="col-5">
+                      <input id="nome" type="text" class="form-control p-1" placeholder="Nome">
+                    </div>
+                    <div class="col-5">
+                      <input id="cognome" type="text" class="form-control p-1" placeholder="Cognome">
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col">
+                <div class="row align-items-center">
+                    <div class="col-5 mt-5">
+                        <select id="partenza" class="form-select p-1" aria-label="Default select example">
+                            <option selected>Stazione di partenza</option>
+                            <option value="1">Palermo</option>
+                            <option value="2">Messina</option>
+                            <option value="3">Catania</option>
+                          </select>
+                    </div>
+                    <div class="col-2 text-center"><i class="mt-5 fa-solid fa-arrow-right-arrow-left text-white"></i></div>
+                    <div class="col-5 mt-5">
+                        <select id="arrivo" class="form-select p-1" aria-label="Default select example">
+                            <option selected>Stazione di arrivo</option>
+                            <option value="1">Agrigento</option>
+                            <option value="2">Bagheria</option>
+                            <option value="3">Siracusa</option>
+                          </select>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col">
+
+                <div class="row justify-content-between">
+                    <div class="col-5 mt-5"><p id="KM" class="bg-white rounded p-1">Km...</p></div>
+                    <div class="col-5 mt-5"><input id="btnCalcolaKm" class="rounded w-100 bg-red text-white p-1 text-start" type="button" value="Calcola Km"></div>
+                </div>
+
+            </div>
+
+            <div class="col">
+                <div><h5 class="text-white">Seleziona la tua età</h5></div>
+                <div class="form-check text-white">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">...17</label>
+                  </div>
+                  <div class="form-check text-white">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      18...64
+                    </label>
+                  </div>
+                  <div class="form-check text-white">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      65...
+                    </label>
+                  </div>
+
+            </div>
+
+            <div class="col text-center mt-5 mb-5">
+                <input class=" bg-red p-3 rounded text-white" type="button" value="Calcola prezzo">
+            </div>
+
+
+
+
+
+        </div>
+
+
+
+    </div>
+    
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script> -->
+    <script src="./javascript/script.js"></script>
+</body>
+</html>
